@@ -1,4 +1,3 @@
-// app.js
 const express = require('express');
 const mongoose = require('mongoose');
 require('dotenv').config();
@@ -31,7 +30,8 @@ const paymentRoutes = require('./routes/paymentroute');
 const ratingRoutes = require('./routes/ratingroute');
 const serviceRoutes = require('./routes/serviceroute');
 
-app.use('/users', userRoutes);
+// Use Routes
+app.use('/users', userRoutes); 
 app.use('/professionals', professionalRoutes);
 app.use('/requests', requestRoutes);
 app.use('/quotes', quoteRoutes);
@@ -47,5 +47,5 @@ app.use((err, req, res, next) => {
 
 // Start Server
 app.listen(PORT, () => {
-  console.log(` Server is running at http://localhost:${PORT}`);
+  console.log(`Server is running at http://localhost:${PORT}`);
 });
