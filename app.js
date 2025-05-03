@@ -4,7 +4,8 @@ require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-
+const cors = require('cors');
+app.use(cors());
 // Middleware
 app.use(express.json());
 
@@ -29,6 +30,7 @@ const quoteRoutes = require('./routes/quoteroute');
 const paymentRoutes = require('./routes/paymentroute');
 const ratingRoutes = require('./routes/ratingroute');
 const serviceRoutes = require('./routes/serviceroute');
+const bidRoutes = require('./routes/bidroute');
 
 // Use Routes
 app.use('/users', userRoutes); 
@@ -38,6 +40,7 @@ app.use('/quotes', quoteRoutes);
 app.use('/payments', paymentRoutes);
 app.use('/ratings', ratingRoutes);
 app.use('/services', serviceRoutes);
+app.use('/bids', bidRoutes);
 
 // Optional: Global error handler (for debugging)
 app.use((err, req, res, next) => {
