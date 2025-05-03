@@ -1,0 +1,95 @@
+/* src/pages/ClientDetails.css */
+.client-details-page {
+    background-color: #fdf2dc;
+    min-height: 100vh;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #debe89;
+    padding: 10px 20px;
+  }
+  
+  .nav-logo {
+    height: 50px;
+  }
+  
+  .nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .search-icon {
+    font-size: 18px;
+  }
+  
+  .profile-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #002c49;
+    border-radius: 50%;
+  }
+  
+  .back-button-container {
+    background-color: #002c49;
+    padding: 16px; /* Adds space around the button */
+    text-align: left; /* Or center, depending on where you want the button */
+  }
+  
+  .back-button {
+    background-color: #002c49;
+    border: 1px solid white; /* Optional: visible border */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: auto; /* Button resizes based on content */
+  }
+  
+  
+  .details-container {
+    padding: 20px;
+  }
+  
+  .section-title {
+    color: #002c49;
+    margin-bottom: 20px;
+  }
+  
+  .detail-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .detail-item {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  
+  .detail-label {
+    font-weight: bold;
+    width: 150px;
+    color: #002c49;
+  }
+  
+  .detail-value {
+    flex: 1;
+  }
+  
+  .more-details-btn {
+    background-color: #002c49;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+  }
